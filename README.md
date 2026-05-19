@@ -1,4 +1,4 @@
-# 🏠 Smart Home Inventory Assistant (Phase 1)
+# 🏠 Smart Home Inventory Assistant 
 
 An intelligent, self-hosted home inventory system powered by local AI, a PostgreSQL vector database, and dual frontend interfaces. This project turns your always-on Windows PC into a private home server that can understand human synonyms (e.g., matching "hair maker" to "comb") via semantic vector search.
 
@@ -27,7 +27,7 @@ The project relies on an **API-First Architecture** where a centralized FastAPI 
                                ┌───────────────┴───────────────┐
                                ▼                               ▼
                        ┌───────────────┐               ┌───────────────┐
-                       │  Phase 1 UI   │               │  Phase 1 UI   │
+                       │   UI   │               │   UI   │
                        │ Telegram Bot  │               │ Next.js Admin │
                        │ (Mobile Lens) │               │ (Web Control) │
                        └───────────────┘               └───────────────┘
@@ -57,7 +57,7 @@ The project relies on an **API-First Architecture** where a centralized FastAPI 
 
 ---
 
-## 📋 Phase 1 Feature Matrix
+## 📋  Feature Matrix
 
 ### 🖥️ Next.js Administrative Dashboard
 * **Single Product Intake Form:** Input name, custom notes/synonyms, room coordinates, storage subdivisions, quantities, and specific volume metrics (e.g., *pieces, pairs, kg*), alongside an integrated graphic file attachment module.

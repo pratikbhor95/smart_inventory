@@ -1,4 +1,4 @@
-# 📂 Project Directory Structure (Phase 1)
+# 📂 Project Directory Structure 
 
 This document defines the standard layout tree for the Smart Home Inventory Assistant ecosystem. Follow this organization precisely to maintain a clean decoupling between the administrative dashboard (`frontend`), the core application engine (`backend`), and the conversational agent (`telegram_bot`).
 
