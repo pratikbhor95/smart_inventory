@@ -1,0 +1,69 @@
+# ==============================================================================
+# Smart Home Inventory Assistant - Master .gitignore
+# ==============================================================================
+
+# --- System & OS Files ---
+.DS_Store
+Thumbs.db
+*.bak
+*.log
+
+# --- Local Environment & Security Secrets ---
+# Crucial: Never push your private API tokens or DB passwords to GitHub!
+.env
+.env.local
+.env.*.local
+*.env
+
+# --- Local Data & Asset Vault ---
+# Keeps your master filesystem photo database out of version control
+data/product_photos/*
+!data/product_photos/.gitkeep
+data/*.xlsx
+# If you have local sqlite files during testing
+*.db
+*.sqlite3
+
+# --- Docker & Database Storage ---
+# Prevents your local heavy PostgreSQL database files from syncing to Git
+.docker/
+docker-volumes/
+postgres_data/
+pgdata/
+
+# --- Backend (Python / FastAPI) Cache & Dependencies ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+pyenv/
+
+# --- Frontend (Node / Next.js) Build & Dependencies ---
+# Dependency directories
+node_modules/
+/jspm_packages/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Serverless production directories
+.serverless/
+
+# --- IDEs & Editors ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
