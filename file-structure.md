@@ -3,7 +3,7 @@
 This document defines the standard layout tree for the Smart Home Inventory Assistant ecosystem. Follow this organization precisely to maintain a clean decoupling between the administrative dashboard (`frontend`), the core application engine (`backend`), and the conversational agent (`telegram_bot`).
 
 ```text
-📦 home-inventory
+📦 smart_inventory
  ┣ 📂 backend
  ┃ ┣ 📂 app
  ┃ ┃ ┣ 📂 api
@@ -31,17 +31,18 @@ This document defines the standard layout tree for the Smart Home Inventory Assi
  ┃ ┣ 📂 app
  ┃ ┃ ┣ 📂 admin
  ┃ ┃ ┃ ┣ 📂 add-item
- ┃ ┃ ┃ ┃ ┗ 📜 page.js         # Single item administrative form
+ ┃ ┃ ┃ ┃ ┗ 📜 page.tsx         # Single item administrative form
  ┃ ┃ ┃ ┣ 📂 import
- ┃ ┃ ┃ ┃ ┗ 📜 page.js         # Excel drop-zone interface
- ┃ ┃ ┃ ┗ 📜 page.js           # Inventory grid and monitoring hub
- ┃ ┃ ┣ 📜 layout.js           # Next.js structural container
- ┃ ┃ ┗ 📜 page.js             # Root application redirection landing
+ ┃ ┃ ┃ ┃ ┗ 📜 page.tsx         # Excel drop-zone interface
+ ┃ ┃ ┃ ┗ 📜 page.tsx           # Inventory grid and monitoring hub
+ ┃ ┃ ┣ 📜 layout.tsx           # Next.tsx structural container
+ ┃ ┃ ┗ 📜 page.tsx             # Root application redirection landing
  ┃ ┣ 📜 package.json          # Node app packages & runtime scripts
- ┃ ┗ 📜 next.config.js        # Config defining local static file routing
+ ┃ ┗ 📜 next.config.ts        # Config defining local static file routing
  ┣ 📂 telegram_bot
  ┃ ┣ 📜 .env                  # Bot API token & restriction user list
  ┃ ┣ 📜 bot.py                # BotFather connection polling daemon
  ┃ ┗ 📜 handlers.py           # Functions executing /stats, /locate, & natural queries
  ┣ 📜 .gitignore              # Ignores data images, node_modules, and env profiles
  ┗ 📜 docker-compose.yml      # Master script managing PostgreSQL & pgvector
+ ```
